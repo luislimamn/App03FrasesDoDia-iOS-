@@ -9,6 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var fraseTela: UILabel!
+    @IBAction func gerarFrase(_ sender: Any) {
+        
+        var frasesNeymar: [String] = ["Saudades do que a gente não viveu ainda"]
+        frasesNeymar += ["Vou querer muito te comer nessa posição"]
+        frasesNeymar.append("To pegando no sono, mas queria esta pegando você")
+        frasesNeymar.append("Não provoca assim de longe que é maldade")
+        frasesNeymar.append("Iae Fake")
+        frasesNeymar.append("Oi razão do meu libido")
+        frasesNeymar.append("Estava malhando e pensando em você")
+        frasesNeymar.append("Exatamente como eu estava imaginando")
+        frasesNeymar.append("Falta pouco pra eu beijar esse corpo todo")
+        
+        fraseTela.text = frasesNeymar[Int(arc4random_uniform(9))]
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
