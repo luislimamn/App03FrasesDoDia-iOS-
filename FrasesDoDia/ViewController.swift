@@ -14,17 +14,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var fraseTela: UILabel!
     @IBAction func gerarFrase(_ sender: Any) {
         
-        var frasesNeymar: [String] = ["Saudades do que a gente não viveu ainda"]
-        frasesNeymar += ["Vou querer muito te comer nessa posição"]
-        frasesNeymar.append("To pegando no sono, mas queria esta pegando você")
-        frasesNeymar.append("Não provoca assim de longe que é maldade")
-        frasesNeymar.append("Iae Fake")
-        frasesNeymar.append("Oi razão do meu libido")
-        frasesNeymar.append("Estava malhando e pensando em você")
-        frasesNeymar.append("Exatamente como eu estava imaginando")
-        frasesNeymar.append("Falta pouco pra eu beijar esse corpo todo")
+        var frasesNeymar: [String] = ["A coragem não é ausência do medo; é a persistência apesar do medo."]
+        frasesNeymar += ["O futuro pertence àqueles que acreditam na beleza de seus sonhos."]
+        frasesNeymar.append("O preço da perfeição é a prática constante.")
+        frasesNeymar.append("Só erra quem produz, mas só produz quem não tem medo de errar.")
+        frasesNeymar.append("O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.")
+        frasesNeymar.append("No meio da dificuldade encontra-se a oportunidade.")
+        frasesNeymar.append("O importante não é vencer todos os dias, mas lutar sempre.")
+        frasesNeymar.append("O medo de perder tira a vontade de ganhar.")
+        frasesNeymar.append("É melhor conquistar a si mesmo do que vencer mil batalhas.")
+        frasesNeymar.append("Há três coisas na vida que nunca voltam atrás: a flecha lançada, a palavra pronunciada e a oportunidade perdida.")
+        frasesNeymar.append("O rio só atinge o seu objetivo porque aprendeu a contornar os obstáculos.")
+        frasesNeymar.append("Sucesso não é obter todas as riquezas do mundo e sim focar nas coisas que te fazem feliz.")
+        frasesNeymar.append("Mantenha seu coração e sua mente na direção certa e não terá que se preocupar com seus pés.")
         
-        fraseTela.text = frasesNeymar[Int(arc4random_uniform(9))]
+        fraseTela.text = frasesNeymar[Int(arc4random_uniform(UInt32(frasesNeymar.count)))]
         
     }
     
