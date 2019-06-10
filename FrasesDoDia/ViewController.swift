@@ -19,12 +19,15 @@ class ViewController: UIViewController {
         frasesNeymar.append("To pegando no sono, mas queria esta pegando você")
         frasesNeymar.append("Não provoca assim de longe que é maldade")
         frasesNeymar.append("Iae Fake")
+        frasesNeymar.append("Vem pra Paris")
+        frasesNeymar.append("Posso te ajudar nisso")
         frasesNeymar.append("Oi razão do meu libido")
+        frasesNeymar.append("Eu sou a presa querendo um caçador")
         frasesNeymar.append("Estava malhando e pensando em você")
         frasesNeymar.append("Exatamente como eu estava imaginando")
         frasesNeymar.append("Falta pouco pra eu beijar esse corpo todo")
         
-        fraseTela.text = frasesNeymar[Int(arc4random_uniform(9))]
+        fraseTela.text = frasesNeymar[Int(arc4random_uniform(UInt32(frasesNeymar.count)))]
         
     }
     
